@@ -1,0 +1,108 @@
+@model guia_2.Models.Autos;
+
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="padding: 2%;">
+        @{
+            bool visible = false;
+
+            foreach (var item in @Model.Images)
+            {
+                @if (visible == false)
+                {
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="@item.Url" class="d-block w-100" alt="Image de auto">
+                    </div>
+
+                    visible = true;
+                    continue;
+                }
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="@item.Url" class="d-block w-100" alt="Image de auto">
+                </div>
+            }
+        }
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Imagenes...
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Añade...</strong>
+                <form asp-controller="ImagesAutos" asp-action="Save" method="POST">
+                    <input type="hidden" name="AutosId" id="AutosId" value="@Model.Id"></input>
+                    <div class="form-floating mb-3">
+                        <input name="Url" placeholder="" class="form-control" required>
+                        <label for="floatingInput">URL de la Imagen</label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </form></br>
+                <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Lista imagenes...
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                <strong>Listado</strong>
+                                <table class=" table bg-light rounded-3" style="padding: 3%;">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <p>Imagen</p>
+                                            </th>
+                                            <th>
+                                                <p>Opciones</p>
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.Images)
+                                        {
+                                            <tr>
+                                                <form asp-controller="ImagesAutos" asp-action="Delete" method="POST">
+                                                    <input type="hidden" asp-for="@item.Id" name="Id">
+                                                    <input type="hidden" asp-for="@Model.Id" name="AutosId">
+                                                    <td>
+                                                        <img src="@item.Url" alt="img" height="50px">
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-danger" type="submit">Delete</button>
+                                                    </td>
+                                                </form>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

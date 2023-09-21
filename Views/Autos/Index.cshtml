@@ -1,0 +1,21 @@
+@model List<guia_2.Models.Autos>
+
+
+<div class="container-lg">
+  <div class="row">
+    @foreach (var item in Model)
+    {
+      <div class="col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img src="@item.Poster" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">@item.Name</h5>
+            <p class="card-text">@item.Description.Substring(0, 60)</p>
+            <p class="card-text"><small class="text-muted">@item.Year</small></p>
+            <a href="/Autos/Details/@item.Id" class="btn btn-primary"><small>Ver más</small></a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

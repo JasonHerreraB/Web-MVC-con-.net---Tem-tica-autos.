@@ -1,0 +1,45 @@
+@model guia_2.Models.MarcasdeAutos;
+
+<h1>Detalles</h1>
+
+<div class=" bg-light rounded-3" style="padding: 2%;">
+    <h4>Marca</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Logo)
+        </dt>
+        <dd class = "col-sm-10">
+            <img src="@Model.Logo" width="200px" alt="">
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Created)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Created)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Origin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Origin)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dercription)
+        </dt> 
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dercription)
+        </dd>
+    </dl>
+
+    <div class="container">
+    <a asp-action="Edit" class="btn btn-outline-primary" asp-route-id="@Model.Id">Editar</a>    |   
+    <a asp-action="Index" class="btn btn-outline-secondary">Regresar</a>    |   
+    <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@Model.Id">Borrar</a>
+</div>
+</div>

@@ -1,0 +1,41 @@
+
+@model guia_2.Models.Autos;
+
+<div class="row mb-4">
+    <div id="carouselExampleControlsNoTouching" class="col-md-8 carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" style="padding: 2%;">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="@Model.Imagenes[0]" class="d-block w-100" alt="Image de auto">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="@Model.Imagenes[1]" class="d-block w-100" alt=".Image de auto">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="@Model.Imagenes[2]" class="d-block w-100" alt="Image de auto">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="@Model.Imagenes[3]" class="d-block w-100" alt="Image de auto">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+<div class="col-md-4">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h3>@Model.Name</h3></li>
+        <li class="list-group-item">Año: @Model.Year</li>
+        <li class="list-group-item">Origen: @Model.Origin</li>
+        <li class="list-group-item">Peso: @Model.Weight</li>
+        <li class="list-group-item">Aceleración: @Model.Acceleration</li>
+        <li class="list-group-item">Descripción: @Model.Description</li>
+    </ul>
+    <a href="/Autos/" class="mt-3 btn btn-info">Regresar</a>
+</div>
+</div>
+

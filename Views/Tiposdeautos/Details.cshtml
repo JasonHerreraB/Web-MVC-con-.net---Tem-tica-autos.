@@ -1,0 +1,42 @@
+@model guia_2.Models.Tiposdeautos;
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1 class="text-white">Detalles</h1>
+
+<div class="row mb-4">
+    <div class="col-md-8">
+        @await Html.PartialAsync("ImagesCarouselTda");
+    </div>
+        
+    <div class="col-md-4">
+        <div class=" bg-light rounded-3" style="padding: 2%;">
+            <h4>Tipo</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </dt>
+                <dd class="col-sm-10">
+                    <br>
+                    @Html.DisplayFor(model => model.Descripcion)
+                </dd>
+            </dl>
+            <div class="container">
+                <a asp-action="Edit" class="btn btn-outline-primary" asp-route-id="@Model.Id">Editar</a> |
+                <a asp-action="Index" class="btn btn-outline-secondary">Regresar</a> |
+                <a asp-action="Delete" class="btn btn-outline-danger" asp-route-id="@Model.Id">Borrar</a>
+            </div>
+        </div>
+    </div>
+</div>
+

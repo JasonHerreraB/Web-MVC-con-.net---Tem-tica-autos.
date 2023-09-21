@@ -1,0 +1,28 @@
+@model guia_2.Models.Tiposdeautos;
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<form asp-action="Edit">
+    <div class="form-floating mb-3">
+        <input asp-for="Nombre" placeholder="" class="form-control" required>
+        <label for="floatingInput">Nombre del tipo</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Image" placeholder="" class="form-control" required>
+        <label for="floatingInput">URL de la Imagen</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" asp-for="Descripcion"
+            style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Descripción</label>
+    </div>
+    <br>
+    <button type="submit" value="Save" class="btn btn-primary">Guardar</button>
+    
+</form>
+
+<div>
+    <a class="btn btn-primary" asp-action="Index">Inicio</a>
+</div>

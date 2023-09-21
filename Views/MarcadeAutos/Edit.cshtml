@@ -1,0 +1,36 @@
+@model guia_2.Models.MarcasdeAutos;
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<form asp-action="Edit">
+    <div class="form-floating mb-3">
+        <input asp-for="Name" placeholder="Nombre de marca" class="form-control" value="@Model.Name" required>
+        <label for="floatingInput">Nombre de la Marca</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Logo" placeholder="Introduce el url de la imagen..." class="form-control" value="@Model.Logo" required>
+        <label for="floatingInput">Logo</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Created" placeholder="" class="form-control" value="@Model.Created" required>
+        <label for="floatingInput">Año de Creación</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Origin" placeholder="País" class="form-control" value="@Model.Origin" required>
+        <label for="floatingInput">País de origen</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here"  value="@Model.Dercription" asp-for="Dercription"
+            style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Descripción</label>
+    </div>
+    <br>
+    <button type="submit" value="Save" class="btn btn-primary">Guardar</button>
+    
+</form>
+
+<div>
+    <a class="btn btn-primary" asp-action="Index">Inicio</a>
+</div>

@@ -1,0 +1,25 @@
+@model List<guia_2.Models.Tiposdeautos>
+
+@{
+  ViewData["Title"] = "Index";
+}
+
+<form class="d-flex" style="padding: 2%;" method="POST" asp-action="Search">
+  <input class="form-control me-2" type="search" placeholder="Buscar Tipo de autos" aria-label="Search" name="search">
+  <button class="btn btn-outline-dark" type="submit">Buscar por nombre</button>
+</form>
+
+<div class="row">
+  @foreach (var item in Model)
+  {
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;">
+        <img src=@item.Image class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">@item.Nombre</h5>
+          <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary"><small>Ver...</small></a>
+        </div>
+      </div>
+    </div>
+  }
+</div>
