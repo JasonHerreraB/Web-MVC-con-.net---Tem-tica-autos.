@@ -1,0 +1,173 @@
+[
+    {
+        "Id": "1",
+        "Name": "Ford Mustang",
+        "Year": "1964",
+        "Origin": "USA",
+        "Displacement": "110",
+        "Weight": "3500",
+        "Acceleration": "12",
+        "Poster": "https://i.pinimg.com/originals/6b/53/1d/6b531d1364514f722459f89908ba0568.jpg",
+        "Description": "Un ícono de los muscle cars estadounidenses, introducido en 1964, que ha mantenido su popularidad a lo largo de los años.",
+        "Imagenes": [
+            "https://i.pinimg.com/originals/5c/d2/25/5cd225df2f0e5f76c9d7eaf08a7a2bc5.jpg",
+            "https://shnack.com/gallery/12/84MustangSVO.jpg",
+            "https://cdn.dealeraccelerate.com/fastlane/1/3076/109208/1920x1440/1984-ford-mustang-gt350",
+            "https://journal.classiccars.com/media/2020/11/23033619-1984-ford-mustang-svo-std.jpg"
+        ]
+    },
+    {
+        "Id": "2",
+        "Name": "Volkswagen Beetle",
+        "Year": "1938",
+        "Origin": "Germany",
+        "Displacement": "1100 cc",
+        "Weight": "1675 lbs",
+        "Acceleration": "29",
+        "Poster": "https://i.pinimg.com/originals/e3/fb/52/e3fb523b4ceaa2a865047773f8a5da28.jpg",
+        "Description": "Un coche compacto y distintivo que se convirtió en un símbolo cultural y se produjo durante décadas.",
+        "Imagenes": [
+            "https://cdnb.artstation.com/p/assets/images/images/005/606/339/large/yuriy-kopylets-001-001.jpg?1492413609",
+            "https://i.ytimg.com/vi/GnP8ga4dsVk/maxresdefault.jpg",
+            "https://www.thesamba.com/vw/gallery/pix/521387.jpg",
+            "http://autoconcept-reviews.com/cars_reviews/volkswagen/volkswagen-beetle-1938-2003/wallpaper/16-ultima%20edicion%20copy.jpg"
+        ]
+    }
+    ,{
+        "Id": "3",
+        "Name": "Porsche 911",
+        "Year": "1963",
+        "Origin": "Germany",
+        "Displacement": "1991 cc",
+        "Weight": "2425 lbs",
+        "Acceleration": "8.3",
+        "Poster": "http://masbukti.com/manufacturers/porsche/porsche-911/1963-porsche-911/1963-porsche-911-6.jpg",
+        "Description": "Un icónico deportivo con diseño atemporal, producido desde 1963, que se ha convertido en sinónimo de rendimiento y elegancia.",
+        "Imagenes": [
+            "https://static.carthrottle.com/workspace/uploads/posts/2017/03/568416dc0fcba5435329f0778f1ecd71.jpg",
+            "http://2.bp.blogspot.com/-yidWMcn36m8/VfH0oA4mOPI/AAAAAAAAAJE/pXACqf0_9WQ/s1600/red-porsche-911.jpg",
+            "https://dustycars.com/wp-content/uploads/2014/06/1963-Porsche-911-3-e1402494680970.jpg",
+            "https://static0.topspeedimages.com/wordpress/wp-content/uploads/jpg/201508/1963-porsche-911-901-14.jpg"
+        ]
+    }
+    ,{
+        "Id": "4",
+        "Name": "Chevrolet Corvette",
+        "Year": "1953",
+        "Origin": "USA",
+        "Displacement": "235 ci",
+        "Weight": "2850 lbs",
+        "Acceleration": "11.5",
+        "Poster": "https://www.musclecarszone.com/wp-content/uploads/2013/07/chevrolet-corvette-1953.jpg",
+        "Description": "Otra leyenda de los muscle cars, el Corvette ha sido un símbolo de potencia y estilo estadounidense desde su debut en 1953.",
+        "Imagenes": [
+            "https://i0.wp.com/janejanejane.com/wp-content/uploads/2020/06/879947.jpg?fit=1920%2C1080&ssl=1",
+            "https://carsevolution.net/wp-content/uploads/2017/12/Corvette-C1-1953-front.jpg",
+            "https://i.pinimg.com/originals/c2/0a/d6/c20ad66caac298ee6e0b85e4130460bd.jpg",
+            "https://images.classic.com/vehicles/2c915dd4027ccad8705e7c41302d197dfb78a4ab.jpg?auto=format&fit=crop&ar=16:9&w=4088"
+        ]
+      }
+    ,{
+        "Id": "5",
+        "Name": "Mini Cooper",
+        "Year": "1959",
+        "Origin": "UK",
+        "Displacement": "848 cc",
+        "Weight": "1488 lbs",
+        "Acceleration": "20.5",
+        "Poster": "https://1959miniregister.com/pressword/wp-content/gallery/316-ghw/dscn1495.jpg",
+        "Description": "Un pequeño coche británico que se ha ganado el cariño de muchos por su diseño compacto y su manejo ágil.",
+        "Imagenes": [
+            "https://inspirationseek.com/wp-content/uploads/2015/01/Mini-Cooper-1959.jpg",
+            "https://s3-eu-west-1.amazonaws.com/eurekar-v2/uploads/images/original/59min.jpg",
+            "https://inspirationseek.com/wp-content/uploads/2014/12/1959-Mini-Cooper-Pictures-Classic-Car.jpg",
+            "https://techcrunch.com/wp-content/uploads/2018/03/p90298497_highres.jpg"
+        ]
+      }
+    ,{
+        "Id": "6",
+        "Name": "Ferrari 250 GTO",
+        "Year": "1962",
+        "Origin": "Italy",
+        "Displacement": "2953 cc",
+        "Weight": "2425 lbs",
+        "Acceleration": "6.1",
+        "Poster": "https://i.pinimg.com/originals/a8/e1/0b/a8e10b6ab19c2822b64f00e447d942f7.jpg",
+        "Description": "Un automóvil deportivo de alto rendimiento y diseño elegante que se ha convertido en uno de los vehículos más valiosos y buscados del mundo.",
+        "Imagenes": [
+            "https://s1.cdn.autoevolution.com/images/news/gallery/1962-ex-phil-hill-ferrari-250-gto-sells-for-world-record-484m_11.jpg",
+            "https://s1.cdn.autoevolution.com/images/news/gallery/1962-ex-phil-hill-ferrari-250-gto-sells-for-world-record-484m_7.jpg",
+            "https://3.bp.blogspot.com/-N3EVw8w3K5c/WMDHdmLArZI/AAAAAAAABEs/A5puZ17m17U60uFCUlkdmf-7V1KOnXW3QCLcB/s1600/1962_ferrari_250_GTO_Le_Mans_Racing_Cup.jpg",
+            "https://st.automobilemag.com/uploads/sites/11/2018/08/1962-ferrari-250-gto-front-three-quarter.jpg"
+        ]
+      }
+    ,{
+        "Id": "7",
+        "Name": "Mercedes-Benz 300SL 'Alas de gaviota'",
+        "Year": "1954",
+        "Origin": "Germany",
+        "Displacement": "2996 cc",
+        "Weight": "2866 lbs",
+        "Acceleration": "7.4",
+        "Poster": "https://i.pinimg.com/474x/f0/7c/bf/f07cbf541544f537af2b25bdf390bc02--classic-mercedes-toys.jpg",
+        "Description": "Famoso por sus puertas de apertura hacia arriba y su estilo distinguido, es uno de los autos más icónicos de la marca.",
+        "Imagenes": [
+            "https://s3.amazonaws.com/media.emercedesbenz.com/magazine/wp-content/uploads/2019/04/19145151/BBW1NJ8.img_.jpeg",
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/16944414/2590112457.jpg",
+            "https://cdn.topgear.es/sites/navi.axelspringer.es/public/styles/gallery_big/public/media/image/mercedes-benz-300-sl-alas-gaviota-amelia-island-concours.jpg?itok=Ge_VRReh",
+            "https://i.pinimg.com/originals/db/be/32/dbbe32e46e49004f0b276ad9b60d9cca.jpg"
+        ]
+      }
+    ,{
+        "Id": "8",
+        "Name": "Ford Model T",
+        "Year": "1908",
+        "Origin": "USA",
+        "Displacement": "176 ci",
+        "Weight": "1200 lbs",
+        "Acceleration": "40",
+        "Poster": "http://www.collectorcarads.com/Picture1/f1_104.jpg",
+        "Description": "El primer automóvil producido en masa que revolucionó la industria y cambió la forma en que las personas viajaban.",
+        "Imagenes": [
+            "https://i.pinimg.com/originals/d9/db/70/d9db7047f75f4467fbab43ecf16a5afe.jpg",
+            "https://inspirationseek.com/wp-content/uploads/2015/01/Ford-Model-T-1908-Classic-Cars.jpg",
+            "https://inspirationseek.com/wp-content/uploads/2014/12/1908-Ford-Model-T-Red-Classic-Car.jpg",
+            "https://squaducation.com/sites/default/files/AAAA1912-ford-model-t.jpg"
+        ]
+      }
+    ,{
+        "Id": "9",
+        "Name": "Lamborghini Miura",
+        "Year": "1966",
+        "Origin": "Italy",
+        "Displacement": "3929 cc",
+        "Weight": "2866 lbs",
+        "Acceleration": "6.7",
+        "Poster": "https://i.pinimg.com/736x/f0/d7/98/f0d7980b375454a1bee43adf8b74b828--lamborghini-miura-post.jpg",
+        "Description": "Un precursor de los superdeportivos modernos, el Miura presentaba un motor trasero central y un diseño exótico.",
+        "Imagenes": [
+            "https://brainprick.com/wp-content/uploads/2014/10/lamborghini-miura-1996.jpg",
+            "https://img.favcars.com/lamborghini/miura/wallpapers_lamborghini_miura_1966_3_b.jpg",
+            "http://www.klassiskebiler.dk/images/biler/lamborghini_1966_miura.jpg",
+            "https://4.bp.blogspot.com/-QaGauHIRoI0/U6MF1i0oX5I/AAAAAAAAYtM/jQW84bAEJ5o/s1600/Lamborghini+Miura+(1966)vvvv.jpg"
+        ]
+      }
+    ,{
+        "Id": "10",
+        "Name": "Jaguar E-Type",
+        "Year": "1961",
+        "Origin": "UK",
+        "Displacement": "3781 cc",
+        "Weight": "3373 lbs",
+        "Acceleration": "7.1",
+        "Poster": "https://i.pinimg.com/originals/fb/b2/7f/fbb27f756764795fc92b28d580257c1c.jpg",
+        "Description": "Un elegante deportivo británico que se considera uno de los automóviles más hermosos jamás fabricados, con una combinación de estilo y rendimiento.",
+        "Imagenes": [
+            "https://www.ctvnews.ca/polopoly_fs/1.2636028.1446243189!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg",
+            "https://cdn.hiconsumption.com/wp-content/uploads/2019/06/1961-Jaguar-E-Type-Roadster-0-Hero.jpg",
+            "https://journal.classiccars.com/media/2020/09/1961-Jaguar-E-Type-Series-1-3-8-Litre-Fixed-Head-Coupe-_63-1280x854.jpg",
+            "https://www.supercars.net/blog/wp-content/uploads/2016/02/1098450-1536.jpg"
+        ]
+      }
+                                                
+]
